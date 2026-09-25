@@ -1,0 +1,20 @@
+{
+  "include": ["src/main.tsx", "src/App.tsx", "src/components/**/*.jsx", "src/components.d.ts", "src/components/error-boundary.tsx"],
+  "exclude": ["node_modules", "build", "dist", "src/components/ui", "src/hooks", "src/lib", "src/pages", "**/*.test.ts"],
+  "compilerOptions": {
+    "noEmit": true,
+    "jsx": "preserve",
+    "module": "ESNext",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "moduleResolution": "bundler",
+    "types": ["node", "vite/client"],
+    "allowJs": true,
+    "checkJs": false,
+    "strict": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
